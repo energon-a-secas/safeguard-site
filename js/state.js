@@ -1,7 +1,7 @@
 // ── State management ─────────────────────────────────────────
 // Shared mutable state. All modules import the same reference.
 
-const STORAGE_KEY = 'lockdown-state';
+const STORAGE_KEY = 'safeguard-state';
 
 export const state = {
   lang: 'en',
