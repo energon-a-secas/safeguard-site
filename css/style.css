@@ -1,6 +1,8 @@
 /* ── Reset & base ──────────────────────────────────────────── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+html { height: 100%; }
+
 :root {
   --bg: #040714;
   --surface-1: rgba(255,255,255,.03);
@@ -26,9 +28,17 @@
 body {
   font-family: var(--font);
   background: var(--bg);
-  min-height: 100vh;
+  min-height: 100%;
   color: var(--text-primary);
   display: flex; flex-direction: column;
+}
+
+main#main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
 }
 
 /* ── Layout ────────────────────────────────────────────────── */
@@ -38,6 +48,26 @@ body {
   margin: 0 auto;
   padding: 30px;
   flex: 1;
+}
+
+.info-footer {
+  text-align: center;
+  padding: 20px var(--space-6) 28px;
+  color: var(--text-muted);
+  font-size: .78em;
+  line-height: 1.8;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: 48px;
+}
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--dur);
+}
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--text-secondary);
+  text-decoration: underline;
 }
 
 /* ── Header ────────────────────────────────────────────────── */
@@ -435,4 +465,26 @@ button:active { transform: scale(0.97); transition-duration: var(--dur-fast); }
   .guide-card-icon { width: 32px; height: 32px; }
   .guide-header { flex-direction: column; gap: var(--space-2); }
   .guide-header-icon { width: 36px; height: 36px; }
+}
+
+/* ── Template alignment (header title link + footer) ── */
+.header-title-link { text-decoration: none; color: inherit; }
+.info-footer {
+  text-align: center;
+  padding: 24px 24px 28px;
+  color: rgba(255,255,255,.45);
+  font-size: .78em;
+  line-height: 1.8;
+  border-top: 1px solid rgba(255,255,255,.08);
+  margin-top: 32px;
+}
+.footer-link {
+  color: rgba(255,255,255,.45);
+  text-decoration: none;
+  transition: color 200ms;
+}
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: rgba(255,255,255,.72);
+  text-decoration: underline;
 }
