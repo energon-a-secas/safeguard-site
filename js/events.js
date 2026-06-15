@@ -42,7 +42,10 @@ export function bindEvents() {
     if (!a) return;
     e.preventDefault();
     const target = document.querySelector(a.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (target) {
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+    }
   });
 
   window.addEventListener('popstate', () => {

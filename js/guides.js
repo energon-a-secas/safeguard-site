@@ -1146,8 +1146,8 @@ export const guides = [
         heading: { en: 'Google Inactive Account Manager', es: 'Gestor de Cuenta Inactiva de Google' },
         paragraphs: [
           {
-            en: 'Google lets you decide what happens after 3, 6, 12, or 18 months of inactivity. You can notify trusted contacts automatically and share specific data (Gmail, Drive, Photos) — or delete everything.',
-            es: 'Google te permite decidir que pasa despues de 3, 6, 12 o 18 meses de inactividad. Puedes notificar contactos de confianza automaticamente y compartir datos especificos (Gmail, Drive, Fotos) — o borrar todo.',
+            en: 'Google lets you decide what happens after 3, 6, 12, or 18 months of inactivity. You can notify trusted contacts automatically and share specific data (Gmail, Drive, Photos), or delete everything.',
+            es: 'Google te permite decidir que pasa despues de 3, 6, 12 o 18 meses de inactividad. Puedes notificar contactos de confianza automaticamente y compartir datos especificos (Gmail, Drive, Fotos), o borrar todo.',
           },
         ],
         steps: [
@@ -1401,8 +1401,8 @@ export const guides = [
         heading: { en: 'Freeze Cards You Don\'t Use', es: 'Congela Tarjetas que No Usas' },
         paragraphs: [
           {
-            en: 'Most banking apps freeze and unfreeze a card instantly. Keep cards frozen when idle — unfreezing takes two seconds.',
-            es: 'La mayoria de las apps bancarias congelan y descongelan una tarjeta al instante. Manten las tarjetas congeladas cuando no las uses — descongelar toma dos segundos.',
+            en: 'Most banking apps freeze and unfreeze a card instantly. Keep cards frozen when idle; unfreezing takes two seconds.',
+            es: 'La mayoria de las apps bancarias congelan y descongelan una tarjeta al instante. Manten las tarjetas congeladas cuando no las uses; descongelar toma dos segundos.',
           },
         ],
       },

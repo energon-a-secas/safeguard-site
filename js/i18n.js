@@ -2,7 +2,7 @@
 // UI chrome strings in both languages. Guide content lives in guides.js.
 
 export const ui = {
-  siteTitle: { en: 'Lockdown', es: 'Lockdown' },
+  siteTitle: { en: 'SafeGuard', es: 'SafeGuard' },
   siteSubtitle: { en: 'Security Hardening Guides', es: 'Guias de Seguridad' },
   searchPlaceholder: { en: 'Search guides...', es: 'Buscar guias...' },
   allCategories: { en: 'All', es: 'Todas' },
