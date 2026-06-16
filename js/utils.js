@@ -11,14 +11,24 @@ export function escHtml(str) {
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/`/g, '&#96;');
+}
+
+function safeUrl(url) {
+  if (!url) return '';
+  const allowed = /^(https?|mailto|tel):/i;
+  return allowed.test(url) ? escHtml(url) : '#';
 }
 
 export function md(text) {
   if (!text) return '';
   let html = escHtml(text);
   html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+    return `<a href="${safeUrl(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  });
   html = html.replace(/\n/g, '<br>');
   return html;
 }

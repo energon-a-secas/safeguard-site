@@ -2,7 +2,7 @@
 
 # SafeGuard
 
-Step-by-step security hardening guides for Apple, Google, and mobile devices. Bilingual EN/ES.
+Step-by-step security tutorials for Apple, Google, and mobile devices. Bilingual EN/ES.
 
 [![Live][badge-site]][url-site]
 [![HTML5][badge-html]][url-html]
@@ -30,7 +30,7 @@ Step-by-step security hardening guides for Apple, Google, and mobile devices. Bi
 
 ## Overview
 
-SafeGuard walks through practical hardening steps for consumer accounts and devices. Switch between English and Spanish, filter by platform, and follow checklists you can complete in one sitting.
+SafeGuard walks through practical security tutorials for consumer accounts and devices. Switch between English and Spanish, filter by platform, and follow checklists you can complete in one sitting.
 
 **Live:** safeguard.neorgon.com
 

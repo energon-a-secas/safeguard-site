@@ -1,6 +1,7 @@
 // ── Event handlers ───────────────────────────────────────────
 import { state, save } from './state.js';
 import { render } from './render.js';
+import { guides } from './guides.js';
 import { $, debounce } from './utils.js';
 
 export function bindEvents() {
@@ -23,18 +24,13 @@ export function bindEvents() {
     render();
   });
 
-  $('guideGrid').addEventListener('click', e => {
-    const card = e.target.closest('.guide-card');
-    if (!card) return;
-    openGuide(card.dataset.id);
-  });
-
   $('backBtn').addEventListener('click', () => {
     state.view = 'list';
     state.activeGuide = null;
     history.pushState(null, '', location.pathname);
     render();
     window.scrollTo(0, 0);
+    if ($('searchInput')) $('searchInput').focus({ preventScroll: true });
   });
 
   $('guideToc').addEventListener('click', e => {
@@ -50,7 +46,7 @@ export function bindEvents() {
 
   window.addEventListener('popstate', () => {
     const hash = location.hash.slice(1);
-    if (hash) {
+    if (hash && guides.find(g => g.id === hash)) {
       state.view = 'detail';
       state.activeGuide = hash;
     } else {
@@ -66,14 +62,8 @@ export function bindEvents() {
       state.activeGuide = null;
       history.pushState(null, '', location.pathname);
       render();
+      window.scrollTo(0, 0);
+      if ($('searchInput')) $('searchInput').focus({ preventScroll: true });
     }
   });
-}
-
-function openGuide(id) {
-  state.view = 'detail';
-  state.activeGuide = id;
-  history.pushState(null, '', `#${id}`);
-  render();
-  window.scrollTo(0, 0);
 }

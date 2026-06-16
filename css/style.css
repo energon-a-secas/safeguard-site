@@ -3,6 +3,14 @@
 
 html { height: 100%; }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
 :root {
   --bg: #040714;
   --surface-1: rgba(255,255,255,.03);
@@ -94,7 +102,7 @@ main#main {
 }
 .header-logo-img:hover { transform: scale(1.14) rotate(-9deg); }
 
-.header-logo h1 { font-size: 1.2em; font-weight: 600; color: var(--text-primary); letter-spacing: .5px; }
+.header-logo .site-title { display: block; font-size: 1.2em; font-weight: 600; color: var(--text-primary); letter-spacing: .5px; }
 .header-subtitle { font-size: .82em; color: rgba(255,255,255,.72); font-weight: 500; margin-top: 3px; }
 
 .header-actions {
@@ -182,6 +190,8 @@ main#main {
   cursor: pointer;
   transition: transform var(--dur), box-shadow var(--dur), background var(--dur);
   animation: fadeIn 0.3s ease-out both;
+  color: inherit;
+  text-decoration: none;
 }
 .guide-card:hover {
   transform: translateY(-3px);

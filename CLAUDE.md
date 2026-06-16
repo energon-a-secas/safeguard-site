@@ -2,9 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## SafeGuard — Security Hardening Guides
+## SafeGuard — Simple Security Tutorials
 
-Searchable, bilingual (EN/ES) security hardening guide library at [safeguard.neorgon.com](https://safeguard.neorgon.com/). Modular ES module app, no build step.
+Searchable, bilingual (EN/ES) simple security tutorial library at [safeguard.neorgon.com](https://safeguard.neorgon.com/). Modular ES module app, no build step.
 
 **Run:** `python3 -m http.server 8825` from `safeguard-site/` (ES modules require a server, not `file://`). Or `make serve`.
 

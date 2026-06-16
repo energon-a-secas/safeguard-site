@@ -16,7 +16,7 @@ export function loadSaved(s) {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const saved = JSON.parse(raw);
-      if (saved.lang) s.lang = saved.lang;
+      if (saved.lang && ['en', 'es'].includes(saved.lang)) s.lang = saved.lang;
     }
   } catch { /* ignore */ }
   const hash = location.hash.slice(1);

@@ -12,7 +12,7 @@ export const guides = [
     icon: 'apple',
     updated: '2026-03',
     title: {
-      en: 'Lock Down Your Apple Account',
+      en: 'Secure Your Apple Account',
       es: 'Protege Tu Cuenta de Apple',
     },
     subtitle: {
@@ -129,7 +129,7 @@ export const guides = [
     icon: 'gmail',
     updated: '2026-03',
     title: {
-      en: 'Harden Your Gmail Account',
+      en: 'Secure Your Gmail Account',
       es: 'Protege Tu Cuenta de Gmail',
     },
     subtitle: {
@@ -306,7 +306,7 @@ export const guides = [
       es: 'Seguridad del iPhone Mas Alla de lo Basico',
     },
     subtitle: {
-      en: 'Stolen Device Protection, app locks, Screen Time restrictions, and lock screen hardening',
+      en: 'Stolen Device Protection, app locks, Screen Time restrictions, and lock screen protection',
       es: 'Proteccion de dispositivo robado, bloqueo de apps, restricciones de Screen Time y pantalla de bloqueo',
     },
     sections: [
@@ -356,7 +356,7 @@ export const guides = [
         },
       },
       {
-        heading: { en: 'Lock Screen Hardening', es: 'Proteger la Pantalla de Bloqueo' },
+        heading: { en: 'Lock Screen Protection', es: 'Proteger la Pantalla de Bloqueo' },
         paragraphs: [
           {
             en: 'Disable Notification Center, Control Center, Siri, Reply with Message, and USB accessories from the lock screen. Every feature exposed while locked is an attack surface.',
@@ -465,6 +465,151 @@ export const guides = [
     ],
   },
 
+  // ─── 5b. Phone Setup for an Older Adult ────────────────────
+  {
+    id: 'elderly-phone',
+    category: 'mobile',
+    icon: 'heart',
+    updated: '2026-06',
+    title: {
+      en: 'Set Up a Phone an Older Adult Can Use Safely',
+      es: 'Configura un Telefono que un Adulto Mayor Pueda Usar con Seguridad',
+    },
+    subtitle: {
+      en: 'Lock screen, app lock, notifications, text size, and emergency contacts in one guide',
+      es: 'Pantalla de bloqueo, bloqueo de apps, notificaciones, tamano de texto y contactos de emergencia en una guia',
+    },
+    sections: [
+      {
+        heading: { en: 'Start with the Lock Screen', es: 'Empieza por la Pantalla de Bloqueo' },
+        paragraphs: [
+          {
+            en: 'A clean lock screen prevents accidental calls, stops strangers from opening the camera or wallet, and keeps notifications private. The goal is fewer buttons, not more locks.',
+            es: 'Una pantalla de bloqueo limpia evita llamadas accidentales, impide que desconocidos abran la camara o billetera, y mantiene las notificaciones privadas. El objetivo es menos botones, no mas candados.',
+          },
+        ],
+        steps: [
+          { en: 'iPhone: Settings > Face ID & Passcode > under "Allow Access When Locked", turn off Control Center, Notification Center, Siri, Reply with Message, and Wallet', es: 'iPhone: Ajustes > Face ID y codigo > en "Permitir acceso con bloqueo", desactiva Centro de Control, Centro de Notificaciones, Siri, Responder con mensaje y Billetera' },
+          { en: 'Android: Settings > Lock screen > turn off lock-screen shortcuts and notification details', es: 'Android: Ajustes > Pantalla de bloqueo > desactiva accesos directos y detalles de notificaciones' },
+          { en: 'Choose a simple wallpaper and keep only the clock and emergency button visible', es: 'Elige un fondo de pantalla sencillo y deja solo el reloj y el boton de emergencia visibles' },
+        ],
+        tip: {
+          en: 'Use a 4-6 digit PIN instead of a pattern. Patterns are harder to remember and easier for someone nearby to guess.',
+          es: 'Usa un PIN de 4-6 digitos en lugar de un patron. Los patrones son mas dificiles de recordar y mas faciles de adivinar para alguien cerca.',
+        },
+      },
+      {
+        heading: { en: 'Lock the Apps That Matter', es: 'Bloquea las Apps Importantes' },
+        paragraphs: [
+          {
+            en: 'App locks protect banking, messages, photos, and email if someone else picks up the phone. They also stop accidental deletions or purchases.',
+            es: 'El bloqueo de apps protege banca, mensajes, fotos y correo si alguien mas toma el telefono. Tambien evita borrados o compras accidentales.',
+          },
+        ],
+        steps: [
+          { en: 'iPhone (iOS 18+): long-press the app icon > Require Face ID or Touch ID', es: 'iPhone (iOS 18+): manten presionado el icono de la app > Requerir Face ID o Touch ID' },
+          { en: 'Samsung: Settings > Biometrics and security > Secure Folder', es: 'Samsung: Ajustes > Biometria y seguridad > Carpeta segura' },
+          { en: 'Xiaomi / OPPO: Settings > Apps > App lock', es: 'Xiaomi / OPPO: Ajustes > Aplicaciones > Bloqueo de apps' },
+          { en: 'Lock at minimum: Phone/SMS, WhatsApp, banking, email, Gallery/Photos, and Settings', es: 'Bloquea al menos: Telefono/SMS, WhatsApp, banca, correo, Galeria/Fotos y Ajustes' },
+        ],
+        tip: {
+          en: 'If the phone has no built-in app lock, install [Norton App Lock](https://play.google.com/store/apps/details?id=com.symantec.applock) from the Play Store.',
+          es: 'Si el telefono no tiene bloqueo de apps integrado, instala [Norton App Lock](https://play.google.com/store/apps/details?id=com.symantec.applock) desde Play Store.',
+        },
+      },
+      {
+        heading: { en: 'Turn Down the Noise', es: 'Baja el Ruido de Notificaciones' },
+        paragraphs: [
+          {
+            en: 'Too many notifications hide the important ones and make the phone feel overwhelming. Keep only the essentials: calls, messages, calendar, and weather.',
+            es: 'Demasiadas notificaciones ocultan las importantes y hacen que el telefono se sienta abrumador. Manten solo lo esencial: llamadas, mensajes, calendario y clima.',
+          },
+        ],
+        steps: [
+          { en: 'Settings > Notifications > turn off all apps except Phone, Messages, WhatsApp, Calendar, and Weather', es: 'Ajustes > Notificaciones > desactiva todas las apps excepto Telefono, Mensajes, WhatsApp, Calendario y Clima' },
+          { en: 'Disable notification badges/dots for games, shopping, news, and social apps', es: 'Desactiva los puntos de notificacion para juegos, compras, noticias y redes sociales' },
+          { en: 'Set a Do Not Disturb schedule overnight, but allow calls from favorites', es: 'Configura No molestar por la noche, pero permite llamadas de favoritos' },
+        ],
+        tip: {
+          en: 'Schedule Do Not Disturb from 9pm to 8am, and set calls from favorites or emergency contacts to bypass it.',
+          es: 'Programa No molestar de 9pm a 8am, y configura que las llamadas de favoritos o contactos de emergencia lo ignoren.',
+        },
+      },
+      {
+        heading: { en: 'Remove What Is Not Needed', es: 'Elimina lo que No se Necesita' },
+        paragraphs: [
+          {
+            en: 'Pre-installed games, shopping apps, and "cleaner" tools confuse users and often show ads. Uninstall or disable anything that is not part of the daily routine.',
+            es: 'Juegos preinstalados, apps de compras y "limpiadores" confunden y suelen mostrar anuncios. Desinstala o desactiva todo lo que no sea parte de la rutina diaria.',
+          },
+        ],
+        steps: [
+          { en: 'Uninstall games, shopping apps, third-party keyboards, and "phone cleaner" apps', es: 'Desinstala juegos, apps de compras, teclados de terceros y apps "limpiadoras"' },
+          { en: 'iPhone: Settings > Screen Time > Content & Privacy Restrictions > disable installing/deleting apps', es: 'iPhone: Ajustes > Screen Time > Restricciones de contenido y privacidad > desactiva instalar/eliminar apps' },
+          { en: 'Android: Settings > Apps > tap each unwanted pre-installed app > Disable or Uninstall', es: 'Android: Ajustes > Aplicaciones > toca cada app preinstalada no deseada > Desactivar o Desinstalar' },
+        ],
+        warning: {
+          en: 'Do not disable Phone, Messages, Settings, Find My iPhone, or Find My Device. Those must stay active.',
+          es: 'No desactives Telefono, Mensajes, Ajustes, Buscar mi iPhone ni Encontrar mi dispositivo. Estas deben permanecer activas.',
+        },
+      },
+      {
+        heading: { en: 'Make It Easier to See and Tap', es: 'Hazlo Mas Facil de Ver y Tocar' },
+        paragraphs: [
+          {
+            en: 'Small text and tiny icons lead to mistakes. Increase font size, enlarge display elements, and reduce visual motion.',
+            es: 'El texto pequeno y los iconos diminutos generan errores. Aumenta el tamano de fuente, agranda los elementos en pantalla y reduce el movimiento visual.',
+          },
+        ],
+        steps: [
+          { en: 'iPhone: Settings > Display & Brightness > Text Size (larger) and Bold Text', es: 'iPhone: Ajustes > Pantalla y brillo > Tamano de texto (mas grande) y Texto en negrita' },
+          { en: 'iPhone: Settings > Accessibility > Display & Text Size > Larger Accessibility Sizes', es: 'iPhone: Ajustes > Accesibilidad > Pantalla y tamano de texto > Tamanos de accesibilidad mas grandes' },
+          { en: 'Android: Settings > Display > Font size and Display size > Large or Largest', es: 'Android: Ajustes > Pantalla > Tamano de fuente y Tamano de visualizacion > Grande o El mas grande' },
+          { en: 'Enable Reduce Motion / Remove animations in accessibility settings', es: 'Activa Reducir movimiento / Eliminar animaciones en ajustes de accesibilidad' },
+          { en: 'On Android, consider a simple launcher such as Big Launcher or Simple Launcher', es: 'En Android, considera un launcher sencillo como Big Launcher o Simple Launcher' },
+        ],
+        tip: {
+          en: 'Keep only 4-6 essential apps on the home screen: Phone, Messages, WhatsApp, Camera, Gallery, and Weather.',
+          es: 'Deja solo 4-6 apps esenciales en la pantalla de inicio: Telefono, Mensajes, WhatsApp, Camara, Galeria y Clima.',
+        },
+      },
+      {
+        heading: { en: 'Set Up Emergency Help', es: 'Configura Ayuda de Emergencia' },
+        paragraphs: [
+          {
+            en: 'Emergency information on the lock screen can save minutes in a crisis. Set it up once and review it every six months.',
+            es: 'La informacion de emergencia en la pantalla de bloqueo puede ahorrar minutos en una crisis. Configurala una vez y revisala cada seis meses.',
+          },
+        ],
+        steps: [
+          { en: 'iPhone: Health app > Medical ID > add emergency contacts, conditions, allergies, and blood type; enable "Show When Locked"', es: 'iPhone: app Salud > ID Medica > agrega contactos de emergencia, condiciones, alergias y tipo de sangre; activa "Mostrar con bloqueo"' },
+          { en: 'Android: Settings > Safety & emergency > Emergency contacts + Medical information; enable "Show on lock screen"', es: 'Android: Ajustes > Seguridad y emergencia > Contactos de emergencia + Informacion medica; activa "Mostrar en pantalla de bloqueo"' },
+          { en: 'Add ICE contacts to favorites and allow them to bypass Do Not Disturb', es: 'Agrega contactos ICE a favoritos y permitiles ignorar No molestar' },
+          { en: 'Write emergency info on paper and keep it in the phone case or wallet', es: 'Escribe la informacion de emergencia en papel y guardala en la funda del telefono o billetera' },
+        ],
+      },
+      {
+        heading: { en: 'Final Walk-Through and Cheat Sheet', es: 'Revision Final y Hoja de Referencia' },
+        paragraphs: [
+          {
+            en: 'Test the whole setup while sitting together. Then print a one-page cheat sheet the person can keep near the charger.',
+            es: 'Prueba toda la configuracion sentados juntos. Luego imprime una hoja de referencia de una pagina que la persona pueda tener cerca del cargador.',
+          },
+        ],
+        steps: [
+          { en: 'Unlock the phone, open each essential app, make a test call, and send a message', es: 'Desbloquea el telefono, abre cada app esencial, haz una llamada de prueba y envia un mensaje' },
+          { en: 'Confirm emergency info appears on the lock screen', es: 'Confirma que la informacion de emergencia aparece en la pantalla de bloqueo' },
+          { en: 'Print a cheat sheet: how to answer a call, how to call the emergency contact, how to charge, and the unlock PIN hint (keep the actual PIN separate)', es: 'Imprime una hoja de referencia: como contestar una llamada, como llamar al contacto de emergencia, como cargar y una pista del PIN (guarda el PIN real aparte)' },
+          { en: 'Schedule a monthly check-in to update apps and review notifications', es: 'Programa una revision mensual para actualizar apps y revisar notificaciones' },
+        ],
+        tip: {
+          en: 'Use large print (16 pt+) and keep the cheat sheet in one place — taped to the wall near the charger works well.',
+          es: 'Usa letra grande (16 pt+) y manten la hoja en un solo lugar — pegada en la pared cerca del cargador funciona bien.',
+        },
+      },
+    ],
+  },
+
   // ─── 6. WhatsApp Security ──────────────────────────────────
   {
     id: 'whatsapp-security',
@@ -472,7 +617,7 @@ export const guides = [
     icon: 'whatsapp',
     updated: '2026-03',
     title: {
-      en: 'Lock Down Your WhatsApp',
+      en: 'Secure Your WhatsApp',
       es: 'Protege Tu WhatsApp',
     },
     subtitle: {
@@ -729,7 +874,7 @@ export const guides = [
     icon: 'apple',
     updated: '2026-03',
     title: {
-      en: 'Harden Your Mac',
+      en: 'Secure Your Mac',
       es: 'Protege Tu Mac',
     },
     subtitle: {
@@ -817,7 +962,7 @@ export const guides = [
     icon: 'globe',
     updated: '2026-03',
     title: {
-      en: 'Harden Your Browser',
+      en: 'Secure Your Browser',
       es: 'Protege Tu Navegador',
     },
     subtitle: {
@@ -889,7 +1034,7 @@ export const guides = [
     icon: 'wifi',
     updated: '2026-03',
     title: {
-      en: 'Lock Down Your Home Wi-Fi',
+      en: 'Secure Your Home Wi-Fi',
       es: 'Protege Tu Wi-Fi del Hogar',
     },
     subtitle: {

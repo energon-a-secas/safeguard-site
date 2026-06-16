@@ -22,6 +22,7 @@ const ICONS = {
   credit: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>',
   email: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>',
   estate: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>',
+  heart: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>',
 };
 
 const CAT_COLORS = {
@@ -39,6 +40,7 @@ export function render() {
   $('siteTitle').textContent = t(ui.siteTitle, state.lang);
   $('siteSubtitle').textContent = t(ui.siteSubtitle, state.lang);
   $('langToggle').textContent = state.lang === 'en' ? 'ES' : 'EN';
+  $('langToggle').setAttribute('aria-label', state.lang === 'en' ? 'Switch to Spanish' : 'Cambiar a ingles');
   document.documentElement.lang = state.lang;
 
   if (state.view === 'detail') {
@@ -59,11 +61,12 @@ function renderList() {
 
 function renderCategoryPills() {
   const wrap = $('categoryPills');
-  let html = `<button class="pill${!state.category ? ' active' : ''}" data-cat="">${t(ui.allCategories, state.lang)}</button>`;
+  const allActive = !state.category;
+  let html = `<button class="pill${allActive ? ' active' : ''}" data-cat="" aria-pressed="${allActive}">${t(ui.allCategories, state.lang)}</button>`;
   for (const cat of categories) {
     const color = CAT_COLORS[cat];
     const active = state.category === cat;
-    html += `<button class="pill${active ? ' active' : ''}" data-cat="${cat}" style="--pill-color:${color}">${t(ui.categoryLabels[cat], state.lang)}</button>`;
+    html += `<button class="pill${active ? ' active' : ''}" data-cat="${cat}" style="--pill-color:${color}" aria-pressed="${active}">${t(ui.categoryLabels[cat], state.lang)}</button>`;
   }
   wrap.innerHTML = html;
 }
@@ -89,7 +92,7 @@ function renderCards() {
 
   grid.innerHTML = filtered.map(g => {
     const color = CAT_COLORS[g.category];
-    return `<article class="guide-card" data-id="${g.id}" style="--card-accent:${color}">
+    return `<a class="guide-card" href="#${escHtml(g.id)}" style="--card-accent:${color}">
       <div class="guide-card-icon">${ICONS[g.icon] || ''}</div>
       <div class="guide-card-body">
         <span class="guide-card-cat" style="color:${color}">${t(ui.categoryLabels[g.category], state.lang)}</span>
@@ -100,7 +103,7 @@ function renderCards() {
           <span class="guide-card-sections">${g.sections.length} ${state.lang === 'en' ? 'sections' : 'secciones'}</span>
         </div>
       </div>
-    </article>`;
+    </a>`;
   }).join('');
 }
 
@@ -162,4 +165,6 @@ function renderDetail() {
   });
 
   $('guideBody').innerHTML = bodyHtml;
+  $('detailView').setAttribute('tabindex', '-1');
+  $('detailView').focus({ preventScroll: true });
 }
