@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## SafeGuard — Simple Security Tutorials
+## SafeGuard: Simple Security Tutorials
 
 Searchable, bilingual (EN/ES) simple security tutorial library at [safeguard.neorgon.com](https://safeguard.neorgon.com/). Modular ES module app, no build step.
 
@@ -18,7 +18,7 @@ Standard modular layout: `index.html` shell + `css/style.css` + `js/*.js`. Entry
 
 **State** (`js/state.js`): `{ lang, view, activeGuide, search, category }`. Only `lang` is persisted to `localStorage` under key `safeguard-state`. The active guide is read from `location.hash` on load.
 
-**All guide content** lives in `js/guides.js` as a static JS array — no external API or data files. Each guide has: `id`, `category`, `icon`, `updated`, `title {en,es}`, `subtitle {en,es}`, and `sections[]`. Each section has `heading`, optional `paragraphs[]`, `steps[]`, `tip`, `warning` — all bilingual `{en, es}` objects.
+**All guide content** lives in `js/guides.js` as a static JS array. No external API or data files. Each guide has: `id`, `category`, `icon`, `updated`, `title {en,es}`, `subtitle {en,es}`, and `sections[]`. Each section has `heading`, optional `paragraphs[]`, `steps[]`, `tip`, `warning`, all bilingual `{en, es}` objects.
 
 **i18n** (`js/i18n.js`): UI chrome strings live in `ui` export. The `t(obj, lang)` helper resolves `{en, es}` objects; falls back to `.en` if the language key is missing. Guide content uses the same `t()` helper in `render.js`.
 
