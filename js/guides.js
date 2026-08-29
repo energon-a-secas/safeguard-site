@@ -603,8 +603,8 @@ export const guides = [
           { en: 'Schedule a monthly check-in to update apps and review notifications', es: 'Programa una revision mensual para actualizar apps y revisar notificaciones' },
         ],
         tip: {
-          en: 'Use large print (16 pt+) and keep the cheat sheet in one place — taped to the wall near the charger works well.',
-          es: 'Usa letra grande (16 pt+) y manten la hoja en un solo lugar — pegada en la pared cerca del cargador funciona bien.',
+          en: 'Use large print (16 pt+) and keep the cheat sheet in one place, taped to the wall near the charger works well.',
+          es: 'Usa letra grande (16 pt+) y manten la hoja en un solo lugar, pegada en la pared cerca del cargador funciona bien.',
         },
       },
     ],
