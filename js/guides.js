@@ -610,6 +610,167 @@ export const guides = [
     ],
   },
 
+  // ─── 5c. Moving an Older Adult to a New Phone ──────────────
+  {
+    id: 'elderly-new-phone',
+    category: 'mobile',
+    icon: 'heart',
+    updated: '2026-11',
+    title: {
+      en: 'Moving an Older Adult to a New Phone',
+      es: 'Pasar a un Adulto Mayor a un Telefono Nuevo',
+    },
+    subtitle: {
+      en: 'The checklist to carry from one phone to the next: backups, locks, a home screen that stays put, and scam shields',
+      es: 'La lista para llevar de un telefono al siguiente: copias de seguridad, bloqueos, una pantalla de inicio fija y escudos contra estafas',
+    },
+    sections: [
+      {
+        heading: { en: 'Why a List', es: 'Por Que una Lista' },
+        paragraphs: [
+          {
+            en: 'A backup moves apps, contacts and photos. It does not move most of what made the old phone safe and easy: text size, app locks, the locked home screen and many safety switches come back at their defaults. Every phone change, something gets missed unless it is written down.',
+            es: 'Una copia de seguridad mueve apps, contactos y fotos. No mueve casi nada de lo que hacia al telefono viejo seguro y facil: el tamano de texto, los bloqueos de apps, la pantalla de inicio fija y muchos ajustes de seguridad vuelven a sus valores de fabrica. En cada cambio de telefono algo se olvida si no esta escrito.',
+          },
+          {
+            en: 'Menu names change between brands and versions. If a path below does not match, type the **bold** word into the search bar at the top of Settings.',
+            es: 'Los nombres de los menus cambian entre marcas y versiones. Si una ruta no coincide, escribe la palabra en **negrita** en la barra de busqueda de Ajustes.',
+          },
+        ],
+      },
+      {
+        heading: { en: 'Before the Old Phone Goes', es: 'Antes de Soltar el Telefono Viejo' },
+        steps: [
+          { en: 'Take a screenshot of every home-screen page, the app drawer, and the Accessibility screen in Settings. Rebuilding from pictures is faster than from memory.', es: 'Toma una captura de cada pagina de la pantalla de inicio, del cajon de apps y de la pantalla de Accesibilidad en Ajustes. Reconstruir desde fotos es mas rapido que desde la memoria.' },
+          { en: 'Write down which apps are locked, who the emergency contacts are, and the Wi-Fi network name. Keep PINs and lock patterns in your password manager, not on the list.', es: 'Anota que apps estan bloqueadas, quienes son los contactos de emergencia y el nombre de la red Wi-Fi. Guarda los PIN y patrones en tu gestor de contrasenas, no en la lista.' },
+          { en: 'iPhone: Settings > [name] > iCloud > **iCloud Backup** > Back Up Now. Android: search Settings for **Backup** > Back up now.', es: 'iPhone: Ajustes > [nombre] > iCloud > **Respaldo en iCloud** > Respaldar ahora. Android: busca **Copia de seguridad** en Ajustes > Crear copia ahora.' },
+          { en: 'WhatsApp: Settings > Chats > **Chat backup** > Back up. Moving between iPhone and Android, the backup does not cross over: follow WhatsApp\'s chat transfer steps during setup instead.', es: 'WhatsApp: Ajustes > Chats > **Copia de seguridad** > Guardar. Al pasar entre iPhone y Android la copia no sirve: sigue los pasos de transferencia de chats de WhatsApp durante la configuracion.' },
+          { en: 'Check that photos finished uploading: **iCloud Photos** on iPhone, **Backup** in Google Photos on Android.', es: 'Confirma que las fotos terminaron de subir: **Fotos en iCloud** en iPhone, **Copia de seguridad** en Google Fotos en Android.' },
+        ],
+        warning: {
+          en: 'Do not reset or give away the old phone until the new one has been in use for a week. It is the only copy of whatever the backup missed.',
+          es: 'No restablezcas ni regales el telefono viejo hasta que el nuevo lleve una semana en uso. Es la unica copia de lo que la copia de seguridad no alcanzo a guardar.',
+        },
+      },
+      {
+        heading: { en: 'Backups On, and Proven', es: 'Copias de Seguridad Activas y Comprobadas' },
+        paragraphs: [
+          {
+            en: 'A backup switch that is on is not the same as a backup that finished. Turn it on, then read the date of the last backup.',
+            es: 'Un interruptor de copia encendido no es lo mismo que una copia terminada. Activala y despues revisa la fecha de la ultima copia.',
+          },
+        ],
+        steps: [
+          { en: 'iPhone: Settings > [name] > iCloud > iCloud Backup > turn on **Back Up This iPhone**. The same screen shows the last successful backup.', es: 'iPhone: Ajustes > [nombre] > iCloud > Respaldo en iCloud > activa **Respaldar este iPhone**. La misma pantalla muestra la ultima copia exitosa.' },
+          { en: 'Android: search **Backup** and turn on backup by Google One. On Samsung, the Google backup is the one that restores on any brand; Samsung Cloud only restores onto another Samsung.', es: 'Android: busca **Copia de seguridad** y activa la copia de Google One. En Samsung, la copia de Google es la que se restaura en cualquier marca; Samsung Cloud solo se restaura en otro Samsung.' },
+          { en: 'Photos: turn on **iCloud Photos** (iPhone) or **Backup** in Google Photos (Android).', es: 'Fotos: activa **Fotos en iCloud** (iPhone) o **Copia de seguridad** en Google Fotos (Android).' },
+          { en: 'WhatsApp: Settings > Chats > Chat backup > set **Frequency** to Daily.', es: 'WhatsApp: Ajustes > Chats > Copia de seguridad > pon la **Frecuencia** en Diariamente.' },
+        ],
+        tip: {
+          en: 'Look at the backup date again a week later. Backups run overnight while the phone charges on Wi-Fi; if the date did not move, one of those is missing.',
+          es: 'Revisa la fecha de la copia una semana despues. Las copias se hacen de noche mientras el telefono carga con Wi-Fi; si la fecha no cambio, falta una de esas dos cosas.',
+        },
+      },
+      {
+        heading: { en: 'Easy to See and Tap', es: 'Facil de Ver y Tocar' },
+        paragraphs: [
+          {
+            en: 'All of these come back at their defaults on a new phone. The guide "Set Up a Phone an Older Adult Can Use Safely" explains why each one helps; this is the list.',
+            es: 'Todo esto vuelve a sus valores de fabrica en un telefono nuevo. La guia "Configura un Telefono que un Adulto Mayor Pueda Usar con Seguridad" explica por que ayuda cada uno; esta es la lista.',
+          },
+        ],
+        steps: [
+          { en: 'Text: iPhone Settings > Display & Brightness > **Text Size** and **Bold Text**. Android: search **Font size** (Samsung: Font size and style).', es: 'Texto: iPhone Ajustes > Pantalla y brillo > **Tamano del texto** y **Texto en negritas**. Android: busca **Tamano de fuente** (Samsung: Tamano y estilo de fuente).' },
+          { en: 'Everything bigger: iPhone Settings > Display & Brightness > **Display Zoom** > Larger Text. Android: search **Display size** (Samsung: Screen zoom).', es: 'Todo mas grande: iPhone Ajustes > Pantalla y brillo > **Zoom de pantalla** > Texto mas grande. Android: busca **Tamano de la pantalla** (Samsung: Zoom de pantalla).' },
+          { en: 'Samsung: Settings > Display > **Easy mode** gives larger icons and text and a longer touch-and-hold delay in one switch.', es: 'Samsung: Ajustes > Pantalla > **Modo Facil** da iconos y texto mas grandes y un retraso mayor al mantener presionado, todo en un interruptor.' },
+          { en: 'Time to read: iPhone Settings > Display & Brightness > **Auto-Lock**. Android: search **Screen timeout**. One to two minutes is a good start.', es: 'Tiempo para leer: iPhone Ajustes > Pantalla y brillo > **Bloqueo automatico**. Android: busca **Tiempo de espera de pantalla**. Uno a dos minutos es un buen comienzo.' },
+          { en: 'Slow fingers: Android: search **Touch and hold delay** > Long. iPhone: Settings > Accessibility > Touch > **Haptic Touch** > Slow.', es: 'Dedos lentos: Android: busca **Retraso al mantener presionado** > Largo. iPhone: Ajustes > Accesibilidad > Tocar > **Haptic Touch** > Lento.' },
+        ],
+      },
+      {
+        heading: { en: 'A Home Screen That Stays Put', es: 'Una Pantalla de Inicio que No se Mueve' },
+        paragraphs: [
+          {
+            en: 'Icons that move or vanish cause most "the phone is broken" calls. Arrange the screen once, then lock it.',
+            es: 'Los iconos que se mueven o desaparecen causan la mayoria de las llamadas de "el telefono se descompuso". Ordena la pantalla una vez y despues bloqueala.',
+          },
+        ],
+        steps: [
+          { en: 'Samsung: Settings > Home screen > turn on **Lock Home screen layout**. Icons can no longer be moved or removed by accident.', es: 'Samsung: Ajustes > Pantalla Inicio > activa **Bloquear diseno de pantalla Inicio**. Los iconos ya no se pueden mover ni quitar por accidente.' },
+          { en: 'Other Android brands: search **Lock layout**. If nothing comes up, the launcher cannot lock, and a simple launcher app can.', es: 'Otras marcas Android: busca **Bloquear diseno**. Si no aparece nada, el launcher no puede bloquearse, y una app de launcher sencillo si puede.' },
+          { en: 'iPhone has no layout lock. For the steadiest screen, Settings > Accessibility > **Assistive Access** shows only the apps you pick, as large buttons. Leaving it takes a triple-click of the side button and a passcode.', es: 'iPhone no tiene bloqueo de diseno. Para la pantalla mas estable, Ajustes > Accesibilidad > **Acceso Asistido** muestra solo las apps que elijas, como botones grandes. Para salir hace falta un triple clic en el boton lateral y un codigo.' },
+          { en: 'Once it is arranged, take a new screenshot of each page for the next phone.', es: 'Cuando quede ordenada, toma una captura nueva de cada pagina para el proximo telefono.' },
+        ],
+        tip: {
+          en: 'Keep the passcode that exits Assistive Access in your password manager. The person using the phone does not need it.',
+          es: 'Guarda el codigo para salir de Acceso Asistido en tu gestor de contrasenas. La persona que usa el telefono no lo necesita.',
+        },
+      },
+      {
+        heading: { en: 'Locks, Again, From Your List', es: 'Bloqueos, Otra Vez, Desde tu Lista' },
+        paragraphs: [
+          {
+            en: 'Lock settings never come across in a backup. Set each one again from the list you wrote before.',
+            es: 'Los bloqueos nunca viajan en una copia de seguridad. Configura cada uno otra vez desde la lista que escribiste antes.',
+          },
+        ],
+        steps: [
+          { en: 'Screen lock: a 4 to 6 digit PIN, plus fingerprint or face.', es: 'Bloqueo de pantalla: un PIN de 4 a 6 digitos, mas huella o rostro.' },
+          { en: 'App locks: iPhone: long-press the app > **Require Face ID**. Samsung: **Secure Folder**. Xiaomi, OPPO and others: search **App lock**. Pixel (Android 15+): Settings > Security & privacy > **Private space**.', es: 'Bloqueo de apps: iPhone: manten presionada la app > **Requerir Face ID**. Samsung: **Carpeta segura**. Xiaomi, OPPO y otras: busca **Bloqueo de apps**. Pixel (Android 15+): Ajustes > Seguridad y privacidad > **Espacio privado**.' },
+          { en: 'Theft: iPhone: Settings > Face ID & Passcode > **Stolen Device Protection**. Android: search **Theft protection** and turn on Theft Detection Lock and Offline Device Lock.', es: 'Robo: iPhone: Ajustes > Face ID y codigo > **Proteccion en caso de robo**. Android: busca **Proteccion contra robo** y activa el bloqueo por deteccion de robo y el bloqueo sin conexion.' },
+          { en: 'Finding the phone: iPhone: Settings > [name] > Find My > **Find My iPhone**. Android: search **Find Hub** (called Find My Device on older phones).', es: 'Encontrar el telefono: iPhone: Ajustes > [nombre] > Buscar > **Buscar mi iPhone**. Android: busca **Find Hub** (antes Encontrar mi dispositivo).' },
+        ],
+        tip: {
+          en: 'Turn on Stolen Device Protection last. Away from home it adds a security delay to account and passcode changes, which slows down the rest of the setup.',
+          es: 'Activa la Proteccion en caso de robo al final. Lejos de casa agrega una espera de seguridad a los cambios de cuenta y de codigo, y eso retrasa el resto de la configuracion.',
+        },
+      },
+      {
+        heading: { en: 'Shields Against Scams', es: 'Escudos Contra Estafas' },
+        paragraphs: [
+          {
+            en: 'Phone scams aimed at older adults usually end with an app that lets the caller see or control the screen. These switches make that much harder.',
+            es: 'Las estafas telefonicas dirigidas a adultos mayores suelen terminar con una app que deja al estafador ver o controlar la pantalla. Estos ajustes lo hacen mucho mas dificil.',
+          },
+        ],
+        steps: [
+          { en: 'Android: Play Store > profile picture > **Play Protect** > settings gear > turn on Scan apps with Play Protect.', es: 'Android: Play Store > foto de perfil > **Play Protect** > engranaje > activa Analizar apps con Play Protect.' },
+          { en: 'Samsung: Settings > Security and privacy > turn on **Auto Blocker**. It blocks apps from outside the store.', es: 'Samsung: Ajustes > Seguridad y privacidad > activa **Bloqueador automatico**. Bloquea apps que no vienen de la tienda.' },
+          { en: 'Android: search **Install unknown apps** and check that every app says Not allowed.', es: 'Android: busca **Instalar apps desconocidas** y revisa que todas digan No permitido.' },
+          { en: 'Remove remote-control apps you did not install yourself: AnyDesk, TeamViewer QuickSupport, RustDesk, AirDroid. Fake bank agents ask for exactly these.', es: 'Elimina las apps de control remoto que no instalaste tu: AnyDesk, TeamViewer QuickSupport, RustDesk, AirDroid. Los falsos agentes del banco piden justo estas.' },
+          { en: 'Android: search **Accessibility** and open the downloaded or installed apps listed there. Only apps you recognize should be on: an app with this access can read and tap the screen.', es: 'Android: busca **Accesibilidad** y abre las apps descargadas o instaladas que aparecen ahi. Solo deben estar activas las que reconozcas: una app con este acceso puede leer y tocar la pantalla.' },
+          { en: 'Unknown callers: iPhone (iOS 26): Settings > Apps > Phone > **Screen Unknown Callers** > Ask Reason for Calling. Android: in the Phone app, open Settings and turn on **Caller ID and spam**.', es: 'Llamadas desconocidas: iPhone (iOS 26): Ajustes > Apps > Telefono > **llamadas desconocidas** > Preguntar el motivo. Android: en la app Telefono, abre Ajustes y activa **Identificador de llamadas y spam**.' },
+        ],
+        tip: {
+          en: 'Agree on one family rule: a bank never asks you to install an app or read out a code. If someone does, hang up and call a family member.',
+          es: 'Acuerden una regla familiar: un banco nunca pide instalar una app ni dictar un codigo. Si alguien lo pide, cuelga y llama a un familiar.',
+        },
+      },
+      {
+        heading: { en: 'Updates on Autopilot', es: 'Actualizaciones en Automatico' },
+        steps: [
+          { en: 'iPhone: Settings > General > Software Update > **Automatic Updates**, all on. Apps: Settings > Apps > App Store > **App Updates** on.', es: 'iPhone: Ajustes > General > Actualizacion de software > **Actualizaciones automaticas**, todo activado. Apps: Ajustes > Apps > App Store > **Actualizaciones de apps** activado.' },
+          { en: 'Android apps: Play Store > profile picture > Settings > Network preferences > **Auto-update apps** > Over Wi-Fi only.', es: 'Apps en Android: Play Store > foto de perfil > Ajustes > Preferencias de red > **Actualizar apps automaticamente** > Solo mediante Wi-Fi.' },
+          { en: 'Android system: search **Software update** and allow automatic downloads over Wi-Fi.', es: 'Sistema Android: busca **Actualizacion de software** y permite la descarga automatica con Wi-Fi.' },
+        ],
+      },
+      {
+        heading: { en: 'Keep the List Where the Phone Is Not', es: 'Guarda la Lista Fuera del Telefono' },
+        paragraphs: [
+          {
+            en: 'The point of this page is that the next phone change starts from it, not from memory.',
+            es: 'La idea de esta pagina es que el proximo cambio de telefono empiece desde aqui, no desde la memoria.',
+          },
+        ],
+        steps: [
+          { en: 'Keep your notes and screenshots somewhere that outlives the phone: your own phone, a shared note, or a printed sheet in the phone box.', es: 'Guarda tus notas y capturas en un lugar que sobreviva al telefono: tu propio telefono, una nota compartida o una hoja impresa en la caja del telefono.' },
+          { en: 'On the next new phone, go through this page top to bottom, then compare against your screenshots.', es: 'En el proximo telefono nuevo, recorre esta pagina de arriba a abajo y despues compara con tus capturas.' },
+          { en: 'Once a year, even without a new phone, check the backup date, the app locks, and the list of remote-control apps.', es: 'Una vez al ano, aunque no haya telefono nuevo, revisa la fecha de la copia, los bloqueos de apps y la lista de apps de control remoto.' },
+        ],
+      },
+    ],
+  },
+
   // ─── 6. WhatsApp Security ──────────────────────────────────
   {
     id: 'whatsapp-security',
