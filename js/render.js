@@ -119,7 +119,9 @@ function renderDetail() {
 
   $('backBtn').innerHTML = `<svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> ${t(ui.backToGuides, lang)}`;
 
-  let tocHtml = `<h3>${t(ui.tableOfContents, lang)}</h3><ul>`;
+  // The header's h1 names the site, so a guide is an h2 and its sections h3:
+  // one h1 per page in both views.
+  let tocHtml = `<h2>${t(ui.tableOfContents, lang)}</h2><ul>`;
   guide.sections.forEach((s, i) => {
     tocHtml += `<li><a href="#section-${i}">${escHtml(t(s.heading, lang))}</a></li>`;
   });
@@ -130,7 +132,7 @@ function renderDetail() {
     <div class="guide-header-icon">${ICONS[guide.icon] || ''}</div>
     <div>
       <span class="guide-cat-label" style="color:${color}">${t(ui.categoryLabels[guide.category], lang)}</span>
-      <h1>${escHtml(t(guide.title, lang))}</h1>
+      <h2>${escHtml(t(guide.title, lang))}</h2>
       <p class="guide-subtitle">${escHtml(t(guide.subtitle, lang))}</p>
       <span class="guide-updated">${t(ui.lastUpdated, lang)} ${guide.updated}</span>
     </div>
@@ -138,7 +140,7 @@ function renderDetail() {
 
   guide.sections.forEach((s, i) => {
     bodyHtml += `<section class="guide-section" id="section-${i}">
-      <h2>${escHtml(t(s.heading, lang))}</h2>`;
+      <h3>${escHtml(t(s.heading, lang))}</h3>`;
 
     if (s.paragraphs) {
       s.paragraphs.forEach(p => {
